@@ -1,9 +1,9 @@
 {
-  "AWSEBDockerrunVersion": 3,
+  "AWSEBDockerrunVersion": 2,
   "containerDefinitions": [
     {
-      "name": "kafkazets-api",
-      "image": "ibrahimbayramov/kafkazets-api:latest",
+      "name": "amigoscode-api",
+      "image": "amigoscode/amigoscode-api:latest",
       "essential": true,
       "memory": 512,
       "portMappings": [
@@ -15,7 +15,7 @@
       "environment": [
         {
           "name": "SPRING_DATASOURCE_URL",
-          "value": "jdbc:postgresql://awseb-e-hwyxjqknyp-stack-awsebrdsdatabase-qltvnynmpbvy.c3wy0uicmlpx.eu-central-1.rds.amazonaws.com:5432/customer"
+          "value": "jdbc:postgresql://TODO:5432/customer"
         }
       ]
     }
